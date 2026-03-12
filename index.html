@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Random Planet Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Random Planet</h1>
+      <p>Pick a new world from NASA's catalog.</p>
+    </header>
+
+    <section class="content">
+      <div class="planet-frame">
+        <div id="planet" class="planet" aria-hidden="true"></div>
+      </div>
+
+      <div class="panel">
+        <div class="stats">
+          <div class="stat">
+            <span class="label">Name</span>
+            <span id="stat-name" class="value">-</span>
+          </div>
+          <div class="stat">
+            <span class="label">Radius</span>
+            <span id="stat-radius" class="value">-</span>
+          </div>
+          <div class="stat">
+            <span class="label">Mass</span>
+            <span id="stat-mass" class="value">-</span>
+          </div>
+          <div class="stat">
+            <span class="label">Temperature</span>
+            <span id="stat-temperature" class="value">-</span>
+          </div>
+          <div class="stat">
+            <span class="label">Orbital period</span>
+            <span id="stat-orbit" class="value">-</span>
+          </div>
+        </div>
+        <button id="generate" class="cta">Generate Random Planet</button>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
